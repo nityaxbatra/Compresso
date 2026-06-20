@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- Author : Samyak Jain
 	Created on : 30 June 2020 -->
 
@@ -53,3 +54,7 @@
 ![info1](screenshots/infoss1.png)
 
 ![info2](screenshots/infoss2.png)
+=======
+# Compresso
+Efficient text compression and decompression using Huffman Trees and variable-length encoding.
+>>>>>>> 7eedb4890d61d2bcfd6d48ec4e1f7b527f54f0f0
