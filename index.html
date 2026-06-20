@@ -1,14 +1,15 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Compresso</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -19,30 +20,44 @@
 
   <body>
     <div class="container">
-      <h1>Compresso</h1>
+      <div class="hero">
+        <h1>Compresso</h1>
 
-      <p class="subtitle">Effortless File Compression using Huffman Encoding</p>
+        <p class="subtitle">
+          Fast, elegant and lossless file compression using Huffman Encoding
+        </p>
+      </div>
 
-      <div class="card">
-        <div class="step">STEP 1</div>
+      <!-- STEP 1 -->
 
-        <h2>Import your document</h2>
+      <div class="card" id="step1">
+        <div class="step-number">01</div>
+
+        <h2>Select Your File</h2>
+
+        <p class="desc">
+          Upload a .txt file to begin compression or decompression.
+        </p>
 
         <img src="assets/text_file_icon1.png" class="icon" />
 
-        <form class="upload-section">
+        <form id="fileform" class="upload-section">
           <input type="file" id="uploadfile" />
 
-          <input type="button" id="submitbtn" value="Import" />
+          <input type="button" id="submitbtn" value="Upload File" />
         </form>
 
-        <p class="note">Supports .txt files only</p>
+        <span class="note"> Supports .txt files only </span>
       </div>
 
-      <div class="card">
-        <div class="step">STEP 2</div>
+      <!-- STEP 2 -->
+
+      <div class="card" id="step2">
+        <div class="step-number">02</div>
 
         <h2>Choose Operation</h2>
+
+        <p class="desc">Select what you'd like to do with your file.</p>
 
         <img src="assets/options_icon2.png" class="icon" />
 
@@ -53,12 +68,22 @@
         </div>
       </div>
 
-      <div class="card">
-        <div class="step">STEP 3</div>
+      <!-- STEP 3 -->
 
-        <h2>Download your processed file</h2>
+      <div class="card" id="step3">
+        <div class="step-number">03</div>
 
-        <img src="assets/wait_icon1.png" class="icon" />
+        <h2>Download Output</h2>
+
+        <p class="desc">Sit back while Compresso prepares your file.</p>
+
+        <div class="dots">
+          <span></span>
+
+          <span></span>
+
+          <span></span>
+        </div>
       </div>
 
       <div class="restart">
