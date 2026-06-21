@@ -488,14 +488,24 @@ function onclickChanges2(secMsg, word) {
 
 /// function to download file
 function myDownloadFile(fileName, text) {
-  let a = document.createElement("a");
-  a.href = "data:application/octet-stream," + encodeURIComponent(text);
-  a.download = fileName;
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-}
-
+	try {
+		// Create a Blob from the text data
+		let blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+		// Create a URL for the blob
+		let url = URL.createObjectURL(blob);
+		// Create and trigger the download
+		let a = document.createElement('a');
+		a.href = url;
+		a.download = fileName;
+		document.body.appendChild(a);
+		a.click();
+		document.body.removeChild(a);
+		// Clean up the URL
+		setTimeout(() => URL.revokeObjectURL(url), 100);
+	} catch (e) {
+		console.error("Download error:", e);
+		alert("Error downloading file. Please try again.");
+	}
 /// changed dom when file is downloaded (step 3 complete)
 function ondownloadChanges(outputMsg) {
   step3.innerHTML = "";
