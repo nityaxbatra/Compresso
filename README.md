@@ -6,7 +6,7 @@ Compresso is a lightweight, web-based file compression and decompression applica
 
 ## 🌐 Live Demo
 
-**[🚀 Try Compresso Now](https://nityaxbatra.github.io/Compresso/)**
+**[🚀 Try Compresso Now](https://compresso-eight.vercel.app/)**
 
 Open the live application in your browser to start compressing files immediately!
 
@@ -283,8 +283,8 @@ Contributions are welcome! Potential improvements:
 
 ## 👨‍💻 Author
 
-**Samyak Jain**  
-_Created: June 30, 2020_
+**Nitya Batra**  
+[GitHub Profile](https://github.com/nityaxbatra)
 
 ---
 
